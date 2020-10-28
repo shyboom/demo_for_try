@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: testall
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8&&useSSL=false
+    username: root
+    password: bupt@506
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: mappers/*.xml
+  type-aliases-package: com.example.demo.dao
+  configuration:
+    #开启驼峰命名转换
+    map-underscore-to-camel-case: true
